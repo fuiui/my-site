@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zhou Meitong's learning website for Web Technologies: a first step into HTML, CSS and JavaScript.">
+  <title>Zhou Meitong | Learning HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="index.html">Zhou Meitong<span>Learning HTML</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#learning">Learning</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">WEB TECHNOLOGIES · MY FIRST WEBSITE</p>
+        <h1 id="page-title">Hello, I'm<br>Zhou Meitong<span class="accent">.</span></h1>
+        <p class="intro">This is my learning website for the Web Technologies course. I am starting with the basics and building it one page at a time.</p>
+        <a class="button" href="#learning">See what I'm learning <span aria-hidden="true">↘</span></a>
+      </div>
+      <figure>
+        <img src="images/first-page.svg" width="640" height="480" alt="An illustration of a browser window with a heading, text and an image: the building blocks of a webpage.">
+        <figcaption>A first page. A place to begin.</figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="about section">
+      <p class="eyebrow">01 / ABOUT THIS SITE</p>
+      <h2>Learning by building.</h2>
+      <p>My name is Zhou Meitong. I am learning how to turn text, images and links into a website. This first version introduces me and brings together the resources I use in class.</p>
+      <p>As the course continues, I will add more pages and practise making them work together.</p>
+    </section>
+
+    <section id="learning" class="section">
+      <p class="eyebrow">02 / THE FOUNDATIONS</p>
+      <h2>Three parts of a webpage.</h2>
+      <div class="cards">
+        <article>
+          <span class="number">01</span>
+          <h3>HTML</h3>
+          <p>Gives content its structure: headings, paragraphs, images and links.</p>
+          <p class="note">The starting point for this website.</p>
+        </article>
+        <article>
+          <span class="number">02</span>
+          <h3>CSS</h3>
+          <p>Controls how the page looks: colours, type, spacing and layout.</p>
+          <p class="note">A simple stylesheet brings this page together.</p>
+        </article>
+        <article>
+          <span class="number">03</span>
+          <h3>JavaScript</h3>
+          <p>Adds behaviour, such as responding when someone clicks a button.</p>
+          <p class="note">Something to explore in a later stage.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources" class="section resources">
+      <div>
+        <p class="eyebrow">03 / KEEP LEARNING</p>
+        <h2>My starting points.</h2>
+        <p>Course materials and a reference to return to when I have questions.</p>
+      </div>
+      <ul>
+        <li><a href="https://webtech.landrock.io/course">Course lessons <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://webtech.landrock.io/sessions">Class slides &amp; exercises <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development">MDN: Learn web development <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Zhou Meitong · Web Technologies</p>
+    <p>Learning HTML / First steps</p>
+  </footer>
+</body>
+</html>
