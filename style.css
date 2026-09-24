@@ -17,6 +17,7 @@ a:focus-visible { outline: 3px solid #a94e24; outline-offset: 6px; }
 .site-name span { display: block; font-size: 12px; font-weight: normal; color: #53665c; }
 nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
 nav a { text-decoration: none; }
+nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; }
 .hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 44px; padding: 76px 0; }
 .eyebrow { color: #52685d; font-size: 11px; font-weight: bold; letter-spacing: 1.6px; }
 h1, h2, h3 { line-height: 1.15; }
@@ -42,6 +43,21 @@ figcaption { margin-top: 12px; color: #53665c; font-size: 12px; text-align: cent
 .resources li { border-bottom: 1px solid #d5dbd0; }
 .resources a { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; text-decoration: none; }
 .site-footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid #d5dbd0; padding: 24px 0; font-size: 12px; color: #53665c; }
+/* Quote collection: each article contains a quotation and its source. */
+.quotes-intro { padding: 64px 0 52px; max-width: 720px; }
+.quotes-intro .intro { max-width: 580px; }
+.text-link { display: inline-block; margin-top: 16px; font-size: 14px; font-weight: bold; }
+.collection-note { max-width: 720px; color: #526257; font-size: 14px; }
+.quote-list { margin-top: 32px; }
+.quote { padding: 28px 32px; margin-bottom: 20px; border: 1px solid #d5dbd0; border-left: 4px solid #829777; border-radius: 6px; background: #fcfbf7; }
+.quote-label { display: flex; align-items: baseline; gap: 16px; }
+.quote-label h3 { margin: 0; color: #526257; font-size: 14px; font-weight: normal; }
+.quote blockquote { margin: 20px 0 24px; }
+.quote-original { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; font-size: clamp(21px, 2.5vw, 28px); line-height: 1.8; margin: 0 0 12px; }
+.quote-translation { max-width: 720px; color: #526257; font-size: 17px; margin: 0; }
+.quote-source { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; border-top: 1px solid #e2e5dc; padding-top: 16px; font-size: 13px; }
+.quote-source > span { font-weight: bold; }
+.back-link { margin-bottom: 10px; }
 /* On a phone, the same content becomes a single column. */
 @media (max-width: 700px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 16px; }
@@ -52,4 +68,6 @@ figcaption { margin-top: 12px; color: #53665c; font-size: 12px; text-align: cent
   .section { padding: 35px 0; }
   .site-footer { flex-direction: column; gap: 0; }
   .site-footer p { margin: 4px 0; }
+  .quotes-intro { padding: 40px 0 32px; }
+  .quote { padding: 22px 20px; }
 }

@@ -4,7 +4,7 @@ A learning website for the Web Technologies course.
 
 ## Current stage
 
-Stage 1: a homepage with an introduction, a local illustration, working links and a basic responsive stylesheet. This is an initial milestone, not the completed course assignment.
+Stage 2: the homepage and an initial collection of five quotations, with Chinese originals, English renderings, attribution and source links. Both pages share a stylesheet and link to one another. This is an intermediate milestone, not the completed course assignment: the final collection needs at least 15 quotations (the classroom exercise targets 20).
 
 ## Open locally
 
@@ -15,9 +15,10 @@ Alternatively, run `python -m http.server 5500` in this folder and visit http://
 ## Files
 
 - `index.html`: the content and semantic page structure.
+- `quotes.html`: five quotations from The Analects and Dao De Jing, with source links to the Chinese Text Project. English renderings were prepared with AI assistance rather than copied from a published translation.
 - `style.css`: colours, typography, layout and a small-screen media query.
 - `images/first-page.svg`: an original illustration created for this project with AI assistance. No external image or font requests are required.
 
 ## Development note
 
-This first version was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Future stages will add the quote collection, shared navigation and interactive exercises.
+This website was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Future stages will expand the quote collection and add random-quote display, shared navigation and interactive exercises.
