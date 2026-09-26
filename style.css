@@ -11,18 +11,33 @@ body {
 a { color: inherit; text-underline-offset: 4px; }
 a:hover { color: #8c421f; }
 a:focus-visible { outline: 3px solid #a94e24; outline-offset: 6px; }
+/* Selection and links use the same colours on both pages. */
+::selection { background: #dce5d1; color: #233e36; }
 .site-header, main, .site-footer { width: min(1080px, 90%); margin: 0 auto; }
 .site-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 25px 0; border-bottom: 1px solid #d5dbd0; }
 .site-name { text-decoration: none; font-size: 18px; font-weight: bold; }
 .site-name span { display: block; font-size: 12px; font-weight: normal; color: #53665c; }
-nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 14px; }
-nav a { text-decoration: none; }
-nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; }
+nav { display: flex; flex-wrap: wrap; gap: 4px 8px; font-size: 14px; }
+nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+nav a:hover { background: #eceee3; }
+nav a[aria-current="page"] {
+  background: #e5e9da;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
 .hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 44px; padding: 76px 0; }
 .eyebrow { color: #52685d; font-size: 11px; font-weight: bold; letter-spacing: 1.6px; }
 h1, h2, h3 { line-height: 1.15; }
 h1 { margin: 20px 0; font-size: clamp(42px, 5.2vw, 65px); letter-spacing: -2.5px; }
-h2 { font-size: 32px; letter-spacing: -1px; margin: 14px 0 22px; }
+h2 { font-size: clamp(26px, 3vw, 32px); letter-spacing: -0.7px; margin: 14px 0 22px; }
 h3 { font-size: 25px; margin: 20px 0 12px; }
 .accent { color: #a94e24; }
 .intro { max-width: 440px; color: #526257; font-size: 17px; }
@@ -33,7 +48,7 @@ figure img { display: block; width: 100%; height: auto; border-radius: 8px; }
 figcaption { margin-top: 12px; color: #53665c; font-size: 12px; text-align: center; }
 .section { padding: 48px 0; border-top: 1px solid #d5dbd0; }
 .about p:not(.eyebrow) { max-width: 720px; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 30px; }
 .cards article { border: 1px solid #d5dbd0; padding: 26px; border-radius: 6px; background: #fcfbf7; }
 .number { font-family: monospace; color: #8c421f; font-size: 13px; }
 .cards p { color: #526257; font-size: 15px; }
@@ -46,22 +61,38 @@ figcaption { margin-top: 12px; color: #53665c; font-size: 12px; text-align: cent
 /* Quote collection: each article contains a quotation and its source. */
 .quotes-intro { padding: 64px 0 52px; max-width: 720px; }
 .quotes-intro .intro { max-width: 580px; }
-.text-link { display: inline-block; margin-top: 16px; font-size: 14px; font-weight: bold; }
+.text-link { display: inline-block; margin-top: 16px; padding: 10px 0; min-height: 44px; font-size: 14px; font-weight: bold; }
 .collection-note { max-width: 720px; color: #526257; font-size: 14px; }
-.quote-list { margin-top: 32px; }
-.quote { padding: 28px 32px; margin-bottom: 20px; border: 1px solid #d5dbd0; border-left: 4px solid #829777; border-radius: 6px; background: #fcfbf7; }
+.quote-list { margin-top: 32px; max-width: 52rem; }
+/* The box model: margin separates cards; padding keeps text off the border. */
+.quote {
+  margin-bottom: 24px;
+  padding: 32px 36px;
+  border: 1px solid #d5dbd0;
+  border-left: 4px solid #829777;
+  border-radius: 6px;
+  background: #fcfbf7;
+}
 .quote-label { display: flex; align-items: baseline; gap: 16px; }
-.quote-label h3 { margin: 0; color: #526257; font-size: 14px; font-weight: normal; }
-.quote blockquote { margin: 20px 0 24px; }
-.quote-original { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; font-size: clamp(21px, 2.5vw, 28px); line-height: 1.8; margin: 0 0 12px; }
-.quote-translation { max-width: 720px; color: #526257; font-size: 17px; margin: 0; }
+.quote-label .number { padding: 3px 8px; border-radius: 3px; background: #f2e9dc; }
+.quote-label h3 { margin: 0; color: #526257; font-size: 14px; font-weight: bold; }
+.quote blockquote { margin: 24px 0; }
+/* Serif type distinguishes the original quotation from its explanation. */
+.quote-original {
+  font-family: "Noto Serif CJK SC", "Songti SC", SimSun, serif;
+  font-size: clamp(23px, 2.5vw, 30px);
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+.quote-translation { max-width: 62ch; color: #526257; font-size: 17px; line-height: 1.8; margin: 0; }
 .quote-source { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; border-top: 1px solid #e2e5dc; padding-top: 16px; font-size: 13px; }
 .quote-source > span { font-weight: bold; }
+.quote-source a { padding: 4px 0; overflow-wrap: anywhere; }
 .back-link { margin-bottom: 10px; }
 /* On a phone, the same content becomes a single column. */
 @media (max-width: 700px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 16px; }
-  nav { gap: 26px; }
+  nav { gap: 4px; }
   .hero { grid-template-columns: 1fr; gap: 36px; padding: 40px 0; }
   .hero figure { max-width: 480px; }
   .cards, .resources { grid-template-columns: 1fr; gap: 18px; }
@@ -69,5 +100,6 @@ figcaption { margin-top: 12px; color: #53665c; font-size: 12px; text-align: cent
   .site-footer { flex-direction: column; gap: 0; }
   .site-footer p { margin: 4px 0; }
   .quotes-intro { padding: 40px 0 32px; }
-  .quote { padding: 22px 20px; }
+  .quote { padding: 24px 20px; }
+  .quote-source { flex-direction: column; gap: 8px; }
 }

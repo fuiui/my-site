@@ -4,7 +4,7 @@ A learning website for the Web Technologies course.
 
 ## Current stage
 
-Stage 2: the homepage and an initial collection of five quotations, with Chinese originals, English renderings, attribution and source links. Both pages share a stylesheet and link to one another. This is an intermediate milestone, not the completed course assignment: the final collection needs at least 15 quotations (the classroom exercise targets 20).
+Stage 3: shared CSS styling for the homepage and the initial five-quote collection. The stylesheet now includes clearer current-page navigation, larger navigation touch targets, a bounded reading width, distinct quotation typography and consistent card spacing. On phones, attribution and source links stack vertically. This is an intermediate milestone, not the completed course assignment: the final collection needs at least 15 quotations (the classroom exercise targets 20).
 
 ## Open locally
 
