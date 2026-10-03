@@ -14,7 +14,7 @@ a:focus-visible { outline: 3px solid #a94e24; outline-offset: 6px; }
 /* Selection and links use the same colours on both pages. */
 ::selection { background: #dce5d1; color: #233e36; }
 .site-header, main, .site-footer { width: min(1080px, 90%); margin: 0 auto; }
-.site-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 25px 0; border-bottom: 1px solid #d5dbd0; }
+.site-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 25px 0; border-bottom: 1px solid #d5dbd0; }
 .site-name { text-decoration: none; font-size: 18px; font-weight: bold; }
 .site-name span { display: block; font-size: 12px; font-weight: normal; color: #53665c; }
 nav { display: flex; flex-wrap: wrap; gap: 4px 8px; font-size: 14px; }
@@ -89,6 +89,18 @@ figcaption { margin-top: 12px; color: #53665c; font-size: 12px; text-align: cent
 .quote-source > span { font-weight: bold; }
 .quote-source a { padding: 4px 0; overflow-wrap: anywhere; }
 .back-link { margin-bottom: 10px; }
+/* Project notebook: an unordered idea list, audience pairs and ordered steps. */
+.idea-list { list-style: none; padding: 0; margin: 28px 0 0; max-width: 52rem; }
+.idea-list li { padding: 24px 28px; margin-bottom: 16px; background: #fcfbf7; border: 1px solid #d5dbd0; border-left: 4px solid #829777; border-radius: 6px; }
+.idea-list h3 { margin: 0 0 12px; }
+.idea-list p { margin: 0; color: #526257; }
+.audience-list { max-width: 52rem; }
+.audience-list > div { padding: 20px 0; border-bottom: 1px solid #d5dbd0; }
+.audience-list dt { font-weight: bold; margin-bottom: 8px; }
+.audience-list dd { margin-left: 0; color: #526257; }
+.page-plan, .build-steps { max-width: 48rem; padding-left: 24px; }
+.page-plan li, .build-steps li { margin-bottom: 16px; padding-left: 6px; }
+.build-steps li::marker { color: #8c421f; font-weight: bold; }
 /* On a phone, the same content becomes a single column. */
 @media (max-width: 700px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 16px; }

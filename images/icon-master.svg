@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Zhou Meitong initials</title>
+  <rect width="512" height="512" fill="#233e36"/>
+  <!-- Geometric Z and M: paths stay crisp without needing a font. -->
+  <path d="M64 144H232V184L119 328H232V368H64V328L177 184H64Z" fill="#f7f5ee"/>
+  <path d="M272 368V144H313L360 235L407 144H448V368H407V230L360 315L313 230V368Z" fill="#f7f5ee"/>
+</svg>

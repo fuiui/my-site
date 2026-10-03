@@ -4,7 +4,7 @@ A learning website for the Web Technologies course.
 
 ## Current stage
 
-Stage 3: shared CSS styling for the homepage and the initial five-quote collection. The stylesheet now includes clearer current-page navigation, larger navigation touch targets, a bounded reading width, distinct quotation typography and consistent card spacing. On phones, attribution and source links stack vertically. This is an intermediate milestone, not the completed course assignment: the final collection needs at least 15 quotations (the classroom exercise targets 20).
+Stage 4: a project notebook with five candidate ideas, their audiences and a proposed four-page scope, plus a matching ZM favicon and app icon on all three pages. The ideas are drafts for personal review, not a final project selection. This is an intermediate milestone, not the completed course assignment: the quote collection still needs expansion from five to at least 15 quotations (the classroom exercise targets 20).
 
 ## Open locally
 
@@ -15,6 +15,10 @@ Alternatively, run `python -m http.server 5500` in this folder and visit http://
 ## Files
 
 - `index.html`: the content and semantic page structure.
+- `project.html`: five ideas, audience descriptions and a proposed starting plan.
+- `favicon-32.png`: 32 × 32 browser icon.
+- `apple-touch-icon.png`: 180 × 180 phone icon with square corners.
+- `images/icon-master.svg`: editable 512 × 512 vector master for both icons; lettering is drawn as paths, with no external font dependency.
 - `quotes.html`: five quotations from The Analects and Dao De Jing, with source links to the Chinese Text Project. English renderings were prepared with AI assistance rather than copied from a published translation.
 - `style.css`: colours, typography, layout and a small-screen media query.
 - `images/first-page.svg`: an original illustration created for this project with AI assistance. No external image or font requests are required.
