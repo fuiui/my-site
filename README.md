@@ -4,7 +4,7 @@ A learning website for the Web Technologies course.
 
 ## Current stage
 
-Stage 5: all three pages load one shared navigation and footer through JavaScript. The navigation highlights the current page automatically. The project ideas remain drafts for personal review. This is an intermediate milestone, not the completed course assignment: the quote collection still needs expansion from five to at least 15 quotations (the classroom exercise targets 20).
+Stage 6: four pages (Home, Quotes, Ideas and About) now share navigation, footer, styling and icons. The About page covers the confirmed name, learning goals, AI assistance and links to the course and repository; no private contact details are published. The project ideas remain drafts for personal review. This is an intermediate milestone, not the completed course assignment: the quote collection still needs expansion from five to at least 15 quotations (the classroom exercise targets 20).
 
 ## Open locally
 
@@ -17,6 +17,7 @@ Use an HTTP server: double-clicking an HTML file opens a `file://` URL, where br
 ## Files
 
 - `index.html`: the content and semantic page structure.
+- `about.html`: introduction, learning goals, development approach and public project links.
 - `nav.html` and `footer.html`: shared HTML fragments, not standalone pages. Edit each here once to update all pages.
 - `nav.js`: loads both fragments, marks the current page and displays a message if loading fails.
 - `project.html`: five ideas, audience descriptions and a proposed starting plan.
@@ -29,4 +30,4 @@ Use an HTTP server: double-clicking an HTML file opens a `file://` URL, where br
 
 ## Development note
 
-This website was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Future stages will add the About page, expand the quote collection and add random-quote display and interactive exercises.
+This website was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Future stages will expand the quote collection and add random-quote display and interactive exercises.

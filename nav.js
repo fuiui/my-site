@@ -1,4 +1,4 @@
-// The three pages share these fragments, so each is written only once.
+// All pages share these fragments, so each is written only once.
 async function loadPart(file, targetId) {
   const target = document.getElementById(targetId);
   try {
@@ -31,7 +31,7 @@ function markCurrentPage() {
   const currentFile = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('#site-header nav a').forEach(link => {
     const destination = new URL(link.getAttribute('href'), window.location.href);
-    // About, Learning and Resources are sections, not separate pages.
+    // Learning and Resources are sections, not separate pages.
     if (!destination.hash && destination.pathname.split('/').pop() === currentFile) {
       link.setAttribute('aria-current', 'page');
     }
