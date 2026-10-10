@@ -90,6 +90,15 @@ figcaption { margin-top: 12px; color: #53665c; font-size: 12px; text-align: cent
 .quote-source > span { font-weight: bold; }
 .quote-source a { padding: 4px 0; overflow-wrap: anywhere; }
 .back-link { margin-bottom: 10px; }
+/* The random panel reuses the collection's quote and source typography. */
+.random-quote { margin-top: 28px; padding: 28px; background: #e5e9da; border: 1px solid #c5d0ba; border-radius: 6px; }
+.random-quote h2 { font-size: 24px; margin-top: 0; }
+.random-quote blockquote { margin: 20px 0; }
+.random-count { color: #526257; font-size: 12px; }
+.random-quote .quote-source { border-color: #c5d0ba; }
+button.button { font-family: inherit; line-height: inherit; border: 0; cursor: pointer; min-height: 44px; }
+button:focus-visible { outline: 3px solid #a94e24; outline-offset: 5px; }
+button:disabled { opacity: 0.65; cursor: default; }
 /* Project notebook: an unordered idea list, audience pairs and ordered steps. */
 .idea-list { list-style: none; padding: 0; margin: 28px 0 0; max-width: 52rem; }
 .idea-list li { padding: 24px 28px; margin-bottom: 16px; background: #fcfbf7; border: 1px solid #d5dbd0; border-left: 4px solid #829777; border-radius: 6px; }

@@ -4,7 +4,7 @@ A learning website for the Web Technologies course.
 
 ## Current stage
 
-Stage 6: four pages (Home, Quotes, Ideas and About) now share navigation, footer, styling and icons. The About page covers the confirmed name, learning goals, AI assistance and links to the course and repository; no private contact details are published. The project ideas remain drafts for personal review. This is an intermediate milestone, not the completed course assignment: the quote collection still needs expansion from five to at least 15 quotations (the classroom exercise targets 20).
+Stage 7: the collection contains 20 distinct quotations with Chinese originals, English renderings and sources. A random quote appears in the opening section, with a button to show another without immediate repetition. The four pages still share navigation, footer, styling and icons. The project ideas remain drafts for personal review; the interactive machine and game are still to come.
 
 ## Open locally
 
@@ -24,10 +24,11 @@ Use an HTTP server: double-clicking an HTML file opens a `file://` URL, where br
 - `favicon-32.png`: 32 × 32 browser icon.
 - `apple-touch-icon.png`: 180 × 180 phone icon with square corners.
 - `images/icon-master.svg`: editable 512 × 512 vector master for both icons; lettering is drawn as paths, with no external font dependency.
-- `quotes.html`: five quotations from The Analects and Dao De Jing, with source links to the Chinese Text Project. English renderings were prepared with AI assistance rather than copied from a published translation.
+- `quotes.html`: 20 quotations from The Analects and Dao De Jing, with source links to the Chinese Text Project. English renderings were prepared with AI assistance rather than copied from a published translation. The collection remains readable without JavaScript.
+- `quotes.js`: reads the HTML collection and chooses a random quotation on page load and button activation. It excludes the current quotation from the next draw.
 - `style.css`: colours, typography, layout and a small-screen media query.
 - `images/first-page.svg`: an original illustration created for this project with AI assistance. No external image or font requests are required.
 
 ## Development note
 
-This website was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Future stages will expand the quote collection and add random-quote display and interactive exercises.
+This website was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Future stages will add the interactive machine and game exercises.
