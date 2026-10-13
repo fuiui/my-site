@@ -1,0 +1,24 @@
+/* Activity styles are separate from the stylesheet shared by every page. */
+.play-panel { max-width: 48rem; margin-top: 28px; padding: 32px; border: 1px solid #d5dbd0; border-radius: 6px; background: #fcfbf7; }
+.progress-heading { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 12px; }
+progress { display: block; width: 100%; height: 24px; accent-color: #233e36; border: 0; border-radius: 4px; overflow: hidden; background: #e5e9da; }
+progress::-webkit-progress-bar { background: #e5e9da; }
+progress::-webkit-progress-value { background: #233e36; transition: width 0.25s ease; }
+progress::-moz-progress-bar { background: #233e36; }
+#machine-status, #game-feedback { min-height: 3.3em; margin: 20px 0 0; }
+.play-panel .button { margin-top: 12px; }
+#machine-start[aria-disabled="true"] { opacity: 0.65; cursor: wait; }
+#attempts { color: #526257; font-weight: bold; margin-top: 0; }
+#guess-form label { display: block; font-weight: bold; margin-bottom: 10px; }
+.guess-controls { display: flex; align-items: stretch; flex-wrap: wrap; gap: 12px; }
+.guess-controls .button { margin-top: 0; }
+#guess-input { width: 140px; max-width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #526257; border-radius: 4px; font: inherit; color: #233e36; background: #fff; }
+#guess-input:focus-visible { outline: 3px solid #a94e24; outline-offset: 3px; }
+#guess-input[aria-invalid="true"] { border-color: #a94e24; }
+#guess-input:disabled { background: #eceee3; }
+#guess-history { padding-left: 24px; }
+#guess-history li { padding: 4px 0; }
+button.secondary-button { background: #e5e9da; color: #233e36; }
+button.secondary-button:hover { background: #d5dfc9; }
+@media (max-width: 700px) { .play-panel { padding: 24px 20px; } }
+@media (prefers-reduced-motion: reduce) { progress::-webkit-progress-value { transition: none; } }

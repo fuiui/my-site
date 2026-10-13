@@ -4,7 +4,7 @@ A learning website for the Web Technologies course.
 
 ## Current stage
 
-Stage 7: the collection contains 20 distinct quotations with Chinese originals, English renderings and sources. A random quote appears in the opening section, with a button to show another without immediate repetition. The four pages still share navigation, footer, styling and icons. The project ideas remain drafts for personal review; the interactive machine and game are still to come.
+Stages 8–9: five connected pages now include a useless progress machine and a number-guessing game. The machine always returns to its starting state and ignores repeated activation during a cycle. The game offers six guesses, higher/lower hints, input validation, a history and restart. The site has 20 sourced quotations and random display, shared navigation/footer, responsive styles and icons. Publishing, submission images and course-platform submission remain outstanding. The project ideas still need personal review.
 
 ## Open locally
 
@@ -17,6 +17,7 @@ Use an HTTP server: double-clicking an HTML file opens a `file://` URL, where br
 ## Files
 
 - `index.html`: the content and semantic page structure.
+- `machine.html`, `machine.css`, `machine.js`: the two activities; plain JavaScript, no libraries or backend. No player data is stored.
 - `about.html`: introduction, learning goals, development approach and public project links.
 - `nav.html` and `footer.html`: shared HTML fragments, not standalone pages. Edit each here once to update all pages.
 - `nav.js`: loads both fragments, marks the current page and displays a message if loading fails.
@@ -31,4 +32,4 @@ Use an HTTP server: double-clicking an HTML file opens a `file://` URL, where br
 
 ## Development note
 
-This website was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Future stages will add the interactive machine and game exercises.
+This website was prepared with Codex assistance. It should be read, understood and personalised by the student; it is not described as independently handwritten work. Local work may be ahead of the public repository. Final publishing and submission are still required.
