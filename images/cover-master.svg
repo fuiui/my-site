@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Learning HTML — Zhou Meitong</title>
+  <rect width="1200" height="630" fill="#f7f5ee"/>
+  <rect x="0" y="0" width="16" height="630" fill="#233e36"/>
+  <text x="90" y="120" font-family="Arial, sans-serif" font-size="18" letter-spacing="3" fill="#526257">WEB TECHNOLOGIES · LEARNING BY BUILDING</text>
+  <text x="85" y="245" font-family="Arial, sans-serif" font-size="84" font-weight="bold" fill="#233e36">Learning</text>
+  <text x="85" y="340" font-family="Arial, sans-serif" font-size="84" font-weight="bold" fill="#233e36">HTML<tspan fill="#a94e24">.</tspan></text>
+  <text x="90" y="410" font-family="Arial, sans-serif" font-size="23" fill="#526257">Small pages. Real experiments.</text>
+  <path d="M90 468H625" stroke="#c5d0ba" stroke-width="2"/>
+  <text x="90" y="519" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#233e36">Zhou Meitong</text>
+  <rect x="738" y="172" width="370" height="305" rx="14" fill="#d5dfc9"/>
+  <rect x="720" y="152" width="370" height="305" rx="14" fill="#fcfbf7" stroke="#233e36" stroke-width="3"/>
+  <path d="M721 202H1089" stroke="#233e36" stroke-width="2"/>
+  <circle cx="747" cy="178" r="6" fill="#a94e24"/><circle cx="768" cy="178" r="6" fill="#d8a37b"/><circle cx="789" cy="178" r="6" fill="#829777"/>
+  <path d="M819 267L776 305L819 343M991 267L1034 305L991 343M933 249L877 361" stroke="#233e36" stroke-width="13" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+  <rect x="770" y="392" width="270" height="12" rx="6" fill="#e5e9da"/>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "Local images and simulated GitHub Pages subdirectory only. Not deployed or submitted.",
+  "files": [
+    {
+      "name": "cover.png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 29804
+    },
+    {
+      "name": "desktop.png",
+      "width": 1920,
+      "height": 1080,
+      "bytes": 76840
+    },
+    {
+      "name": "mobile.png",
+      "width": 375,
+      "height": 812,
+      "bytes": 27169
+    },
+    {
+      "name": "apple-touch-icon.png",
+      "width": 180,
+      "height": 180,
+      "bytes": 1619
+    },
+    {
+      "name": "favicon-32.png",
+      "width": 32,
+      "height": 32,
+      "bytes": 405
+    }
+  ]
+}

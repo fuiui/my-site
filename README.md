@@ -4,7 +4,7 @@ A learning website for the Web Technologies course.
 
 ## Current stage
 
-Stages 8–9: five connected pages now include a useless progress machine and a number-guessing game. The machine always returns to its starting state and ignores repeated activation during a cycle. The game offers six guesses, higher/lower hints, input validation, a history and restart. The site has 20 sourced quotations and random display, shared navigation/footer, responsive styles and icons. Publishing, submission images and course-platform submission remain outstanding. The project ideas still need personal review.
+Stage 10 (local preparation): the five-page site and its activities are complete as a local draft. The submission folder contains a cover, two exact-size homepage screenshots, two icons and draft platform text. Sharing metadata is prepared for the expected GitHub Pages address, but publishing and course-platform submission have NOT been performed. Personal content/code review and the VS Code AI-agent setup check remain outstanding.
 
 ## Open locally
 
@@ -17,6 +17,8 @@ Use an HTTP server: double-clicking an HTML file opens a `file://` URL, where br
 ## Files
 
 - `index.html`: the content and semantic page structure.
+- `images/cover-master.svg` and `images/og-image.png`: editable cover and 1200 × 630 sharing image.
+- `submission/`: five platform images, draft descriptions and the remaining submission checklist.
 - `machine.html`, `machine.css`, `machine.js`: the two activities; plain JavaScript, no libraries or backend. No player data is stored.
 - `about.html`: introduction, learning goals, development approach and public project links.
 - `nav.html` and `footer.html`: shared HTML fragments, not standalone pages. Edit each here once to update all pages.
